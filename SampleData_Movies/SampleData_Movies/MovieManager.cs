@@ -22,10 +22,10 @@ namespace SampleData_Movies
             var ls = new ActorRole() { Person = mh, RoleName = "Luke Skywalker" };
 
             var hf = new Person() { Name = "Harrison Ford" };
-            var hs = new ActorRole() { Person = mh, RoleName = "Han Solo" };
+            var hs = new ActorRole() { Person = hf, RoleName = "Han Solo" };
 
             var cf = new Person() { Name = "Carrie Fisher" };
-            var pl = new ActorRole() { Person = mh, RoleName = "Princess Leia" };
+            var pl = new ActorRole() { Person = cf, RoleName = "Princess Leia" };
 
             var mg = new Person() { Name = "Ewan McGregor" };
             var obi1 = new ActorRole { Person = mg, RoleName = "Obi-Wan Kenobi" };
