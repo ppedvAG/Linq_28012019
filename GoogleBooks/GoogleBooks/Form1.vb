@@ -63,8 +63,39 @@ Public Class Form1
 
         MessageBox.Show($"Bunte Seiten Summe: {seiten}")
 
-        'Dim titel = ws.Cells().Where(Function(x) x.Style.Fill.BackgroundColor.Rgb IsNot Nothing)
+        ws.Cells().Where(Function(x) x.Style.Fill.BackgroundColor.Rgb IsNot Nothing) _
+                  .ToList().ForEach(Function(x) MessageBox.Show(x.Value.ToString()))
 
+
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        Dim tokill = New List(Of Integer)
+        tokill.Add(3)
+        tokill.Add(4)
+        tokill.Add(5)
+        tokill.Add(6)
+
+
+        Dim liste = New List(Of Integer)
+        For index = 1 To 10
+            liste.Add(index)
+        Next
+
+
+
+        'For Each i In liste.ToList()
+        '    If i > 3 AndAlso i < 8 Then
+        '        liste.Remove(i)
+        '    End If
+        'Next
+
+        Dim clean = liste.Except(tokill).Union(tokill)
+
+
+        tokill.ForEach(Function(x) liste.Remove(x))
 
     End Sub
 End Class
