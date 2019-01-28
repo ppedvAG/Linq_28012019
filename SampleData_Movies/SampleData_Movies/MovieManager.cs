@@ -9,7 +9,7 @@ namespace SampleData_Movies
     {
         public IEnumerable<Movie> Movies { get; private set; }
 
-        
+
         public MovieManager()
         {
             var gl = new Person() { Name = "George Lucas" };
@@ -42,7 +42,7 @@ namespace SampleData_Movies
             var sw7 = new Movie() { Title = "Star Wars: Episode VII – The Force Awakens", PublishedDate = new DateTime(2015, 12, 18), Revenue = 2053311220m, Director = jj };
             var sw8 = new Movie() { Title = "Star Wars: Episode VIII – The Last Jedi", PublishedDate = new DateTime(2017, 12, 15), Revenue = 1316764784m, Director = rj };
             var sw9 = new Movie() { Title = "Star Wars: Episode IX – ???", PublishedDate = new DateTime(2019, 12, 20), Revenue = 0m, Director = jj };
-          
+
 
             sw1.ActorRoles.Add(obi1);
             sw2.ActorRoles.Add(obi1);
@@ -62,8 +62,8 @@ namespace SampleData_Movies
 
 
             Movies = new List<Movie>(new[] { sw1, sw2, sw3, sw4, sw5, sw6, sw7, sw8, sw9 });
-            gl.Movies.ToList().AddRange(Movies.Where(x => x.Director == gl));
-            jj.Movies.ToList().AddRange(Movies.Where(x => x.Director == jj));
+            Movies.Where(x => x.Director == gl).ToList().ForEach(x => gl.Movies.Add(x));
+            Movies.Where(x => x.Director == jj).ToList().ForEach(x => jj.Movies.Add(x));
             ik.Movies.Add(sw2);
             rm.Movies.Add(sw3);
             rj.Movies.Add(sw8);
