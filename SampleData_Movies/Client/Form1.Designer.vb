@@ -30,6 +30,7 @@ Partial Class Form1
         Me.ButtonWhere = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonMosteRev = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -65,6 +66,7 @@ Partial Class Form1
         Me.FlowLayoutPanel1.Controls.Add(Me.ButtonSortLamb)
         Me.FlowLayoutPanel1.Controls.Add(Me.ButtonWhere)
         Me.FlowLayoutPanel1.Controls.Add(Me.Button1)
+        Me.FlowLayoutPanel1.Controls.Add(Me.ButtonMosteRev)
         Me.FlowLayoutPanel1.Controls.Add(Me.Button2)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
@@ -128,6 +130,17 @@ Partial Class Form1
         Me.Button2.Text = "Alle Filme von Regiseuren die 2 oder mehr Filme gemacht haben"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'ButtonMosteRev
+        '
+        Me.ButtonMosteRev.AutoSize = True
+        Me.ButtonMosteRev.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ButtonMosteRev.Location = New System.Drawing.Point(621, 3)
+        Me.ButtonMosteRev.Name = "ButtonMosteRev"
+        Me.ButtonMosteRev.Size = New System.Drawing.Size(148, 35)
+        Me.ButtonMosteRev.TabIndex = 5
+        Me.ButtonMosteRev.Text = "Most Revenue"
+        Me.ButtonMosteRev.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -156,4 +169,5 @@ Partial Class Form1
     Friend WithEvents ButtonWhere As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonMosteRev As Button
 End Class

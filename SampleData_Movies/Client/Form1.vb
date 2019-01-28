@@ -82,4 +82,12 @@ Public Class Form1
 
 
     End Sub
+
+    Private Sub ButtonMosteRev_Click(sender As Object, e As EventArgs) Handles ButtonMosteRev.Click
+
+        Dim result = mm.Movies.Where(Function(m) m.PublishedDate.Year < 1999 Or m.PublishedDate.Year > 2015).Sum(Function(x) x.Revenue)
+
+        MessageBox.Show($"Summe: {result:c}")
+
+    End Sub
 End Class
