@@ -43,6 +43,11 @@ Public Class Form1
             e.Value = p.Name
         End If
 
+        Dim ar = TryCast(e.Value, IEnumerable(Of ActorRole))
+        If Not ar Is Nothing Then
+            e.Value = String.Join(", ", ar.Select(Function(x) $"{x.Person.Name} ({x.RoleName})"))
+        End If
+
     End Sub
 
     Private Sub ButtonWhere_Click(sender As Object, e As EventArgs) Handles ButtonWhere.Click
@@ -86,8 +91,16 @@ Public Class Form1
     Private Sub ButtonMosteRev_Click(sender As Object, e As EventArgs) Handles ButtonMosteRev.Click
 
         Dim result = mm.Movies.Where(Function(m) m.PublishedDate.Year < 1999 Or m.PublishedDate.Year > 2015).Sum(Function(x) x.Revenue)
+        'Dim result = mm.Movies.Count(Function(m) m.PublishedDate.Year < 1999 Or m.PublishedDate.Year > 2015)
 
         MessageBox.Show($"Summe: {result:c}")
 
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim result = mm.Movies.FirstOrDefault(Function(x) x.Title.ToLower().Contains("phantom"))
+        If Not result Is Nothing Then
+            MessageBox.Show(result.Title)
+        End If
     End Sub
 End Class
