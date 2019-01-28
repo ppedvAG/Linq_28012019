@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="GoogleBooks.BooksResult" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAgABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Item">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAgQGAAAAAAAAAAAAAAAAAAABAAAgA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="saleInfo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GoogleBooks.Volumeinfo" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAQIAEAgwAIgAAAEjQAAAgIIQQQAAAAAECAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Readingmodes" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Imagelinks" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Panelizationsummary" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Industryidentifier" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAABAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Saleinfo" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAMAAAAAQAAAAAAAACBAAAAACAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Listprice" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Retailprice">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Offer" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAEAAAAAAAEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Listprice1" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Retailprice1" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Accessinfo" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAQAAAgEAAAAAIIAAAAAACAACAAACAAAAAAQ=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Epub" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Pdf" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoogleBooks.Searchinfo" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>BooksResult.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
