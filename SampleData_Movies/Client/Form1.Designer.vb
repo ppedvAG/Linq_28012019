@@ -34,12 +34,21 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
+        Me.TreeView2 = New System.Windows.Forms.TreeView()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.ButtonGroup = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer2.Panel1.SuspendLayout()
+        Me.SplitContainer2.Panel2.SuspendLayout()
+        Me.SplitContainer2.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -50,7 +59,7 @@ Partial Class Form1
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(614, 408)
+        Me.DataGridView1.Size = New System.Drawing.Size(614, 361)
         Me.DataGridView1.TabIndex = 0
         '
         'ButtonAll
@@ -76,11 +85,13 @@ Partial Class Form1
         Me.FlowLayoutPanel1.Controls.Add(Me.ButtonMosteRev)
         Me.FlowLayoutPanel1.Controls.Add(Me.Button2)
         Me.FlowLayoutPanel1.Controls.Add(Me.Button3)
+        Me.FlowLayoutPanel1.Controls.Add(Me.ButtonGroup)
+        Me.FlowLayoutPanel1.Controls.Add(Me.SplitContainer2)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(926, 82)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(926, 129)
         Me.FlowLayoutPanel1.TabIndex = 1
         '
         'ButtonSort
@@ -165,13 +176,13 @@ Partial Class Form1
         Me.TreeView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TreeView1.Location = New System.Drawing.Point(0, 0)
         Me.TreeView1.Name = "TreeView1"
-        Me.TreeView1.Size = New System.Drawing.Size(308, 408)
+        Me.TreeView1.Size = New System.Drawing.Size(308, 361)
         Me.TreeView1.TabIndex = 2
         '
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 82)
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 129)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -181,9 +192,56 @@ Partial Class Form1
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.DataGridView1)
-        Me.SplitContainer1.Size = New System.Drawing.Size(926, 408)
+        Me.SplitContainer1.Size = New System.Drawing.Size(926, 361)
         Me.SplitContainer1.SplitterDistance = 308
         Me.SplitContainer1.TabIndex = 3
+        '
+        'SplitContainer2
+        '
+        Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer2.Location = New System.Drawing.Point(3, 126)
+        Me.SplitContainer2.Name = "SplitContainer2"
+        '
+        'SplitContainer2.Panel1
+        '
+        Me.SplitContainer2.Panel1.Controls.Add(Me.TreeView2)
+        '
+        'SplitContainer2.Panel2
+        '
+        Me.SplitContainer2.Panel2.Controls.Add(Me.DataGridView2)
+        Me.SplitContainer2.Size = New System.Drawing.Size(926, 0)
+        Me.SplitContainer2.SplitterDistance = 308
+        Me.SplitContainer2.TabIndex = 8
+        '
+        'TreeView2
+        '
+        Me.TreeView2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TreeView2.Location = New System.Drawing.Point(0, 0)
+        Me.TreeView2.Name = "TreeView2"
+        Me.TreeView2.Size = New System.Drawing.Size(308, 0)
+        Me.TreeView2.TabIndex = 2
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView2.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowTemplate.Height = 24
+        Me.DataGridView2.Size = New System.Drawing.Size(614, 0)
+        Me.DataGridView2.TabIndex = 0
+        '
+        'ButtonGroup
+        '
+        Me.ButtonGroup.AutoSize = True
+        Me.ButtonGroup.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ButtonGroup.Location = New System.Drawing.Point(3, 85)
+        Me.ButtonGroup.Name = "ButtonGroup"
+        Me.ButtonGroup.Size = New System.Drawing.Size(102, 35)
+        Me.ButtonGroup.TabIndex = 9
+        Me.ButtonGroup.Text = "Group by"
+        Me.ButtonGroup.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -204,6 +262,11 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
+        Me.SplitContainer2.Panel1.ResumeLayout(False)
+        Me.SplitContainer2.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer2.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -221,4 +284,8 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents TreeView1 As TreeView
     Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents ButtonGroup As Button
+    Friend WithEvents SplitContainer2 As SplitContainer
+    Friend WithEvents TreeView2 As TreeView
+    Friend WithEvents DataGridView2 As DataGridView
 End Class

@@ -103,4 +103,19 @@ Public Class Form1
             MessageBox.Show(result.Title)
         End If
     End Sub
+
+    Private Sub ButtonGroup_Click(sender As Object, e As EventArgs) Handles ButtonGroup.Click
+
+        Dim groups = mm.Movies.GroupBy(Function(x) x.Director)
+
+        TreeView1.Nodes.Clear()
+        For Each g In groups.OrderByDescending(Function(x) x.Key.Movies.Count())
+            Dim tn = New TreeNode(g.Key.Name)
+            For Each m In g.OrderByDescending(Function(x) x.PublishedDate)
+                tn.Nodes.Add(New TreeNode(m.Title))
+            Next
+            TreeView1.Nodes.Add(tn)
+        Next
+
+    End Sub
 End Class
